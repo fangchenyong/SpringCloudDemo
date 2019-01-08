@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<mapper namespace="com.joey.fangxing.mapper.MemberMapper">
+    <select id="findObjectById" parameterType="Integer" resultType="Map">
+        select * from member where id=#{value}
+    </select>
+
+
+</mapper>
+
